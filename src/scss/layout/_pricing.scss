@@ -1,0 +1,22 @@
+.pricing-tables-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye las tarjetas uniformemente en el contenedor */
+    gap: 20px;
+}
+
+.pricing-table {
+    padding: 20px;
+    min-width: calc(50% - 20px); /* Establece el ancho de cada tarjeta al 50% del contenedor con un espacio entre ellas */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Agrega un margen inferior para el espacio entre las filas */
+
+    /* Resto del estilo (sin cambios) */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .pricing-table {
+        min-width: calc(100% - 20px); /* En pantallas más pequeñas, establece el ancho al 100% para que sea de una columna */
+    }
+}
